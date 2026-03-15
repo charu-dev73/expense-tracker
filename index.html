@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pixel Expense Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<h1>Expense Tracker</h1>
+<p class="subtitle">Track your daily spending</p>
+
+<input type="number" id="budget" placeholder="Set Monthly Budget ₹">
+
+<input type="text" id="desc" placeholder="What did you spend on?">
+<input type="number" id="amount" placeholder="₹ Amount">
+
+<button onclick="addExpense()">Add Expense</button>
+
+<div class="total-box">
+<h2>Total Spent</h2>
+<p>₹ <span id="total">0</span></p>
+</div>
+
+<div class="progress-section">
+
+<p>Remaining Budget: ₹ <span id="remaining">0</span></p>
+
+<div class="progress-bar">
+<div class="progress-fill" id="progressFill"></div>
+</div>
+
+</div>
+
+<ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
